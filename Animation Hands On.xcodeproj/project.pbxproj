@@ -12,6 +12,7 @@
 		4E526481228B9B3500BE3EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E52647F228B9B3500BE3EB1 /* Main.storyboard */; };
 		4E526483228B9B3700BE3EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E526482228B9B3700BE3EB1 /* Assets.xcassets */; };
 		4E526486228B9B3700BE3EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E526484228B9B3700BE3EB1 /* LaunchScreen.storyboard */; };
+		4EB496E02295A4BD008B492C /* water sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EB496DF2295A4BD008B492C /* water sound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4E526482228B9B3700BE3EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E526485228B9B3700BE3EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E526487228B9B3700BE3EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB496DF2295A4BD008B492C /* water sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "water sound.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,9 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E408FC822928DAC000B4493 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EB496DF2295A4BD008B492C /* water sound.wav */,
+			);
+			path = "Sound Files";
+			sourceTree = "<group>";
+		};
 		4E52646F228B9B3500BE3EB1 = {
 			isa = PBXGroup;
 			children = (
+				4E408FC822928DAC000B4493 /* Sound Files */,
 				4E52647A228B9B3500BE3EB1 /* Animation Hands On */,
 				4E526479228B9B3500BE3EB1 /* Products */,
 			);
@@ -123,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E526486228B9B3700BE3EB1 /* LaunchScreen.storyboard in Resources */,
+				4EB496E02295A4BD008B492C /* water sound.wav in Resources */,
 				4E526483228B9B3700BE3EB1 /* Assets.xcassets in Resources */,
 				4E526481228B9B3500BE3EB1 /* Main.storyboard in Resources */,
 			);
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JSB449F8V6;
 				INFOPLIST_FILE = "Animation Hands On/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JSB449F8V6;
 				INFOPLIST_FILE = "Animation Hands On/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
