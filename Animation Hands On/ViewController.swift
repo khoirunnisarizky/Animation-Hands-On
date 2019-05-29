@@ -116,9 +116,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
         
         self.becomeFirstResponder() // to get shake gesture
         
-       drawBezierPath()
-        let dragPan = UIPanGestureRecognizer(target: self, action: #selector(dragButir1OnBezier(recognizer:)))
-        view.addGestureRecognizer(dragPan)
+//       drawBezierPath()
+//        let dragPan = UIPanGestureRecognizer(target: self, action: #selector(dragButir1OnBezier(recognizer:)))
+//        view.addGestureRecognizer(dragPan)
 //
        
     }
@@ -160,10 +160,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
         super.viewDidAppear(animated)
         showAlert()
          //set the butir1 center at randon point on Bezier path. Setting the starting point here
-        butir1.center = p0
+        //butir1.center = p0
         
         //store the initial position of butir1
-        butir1Position = p0
+        //butir1Position = p0
         
     }
     
@@ -231,17 +231,17 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITextFieldDelega
         // set the newLocation of the butir1
         butir1.center = CGPoint(x: CGFloat(newX), y: CGFloat(newY))
         
-        if p2.x-50...p2.x+20 ~= CGFloat(newX) && p2.y-50...p2.y+20 ~= CGFloat(newY)  {
-            let path = UIBezierPath()
-            path.move(to: butir1.center)
-            let targetPoint = CGPoint(x: 294, y: 329)
-            let controlPoint = CGPoint(x: butir1.frame.x, y: 276)
-            path.addQuadCurve(to: targetPoint, controlPoint: controlPoint)
-            
-            self.butir1.frame.origin.x = 101
-            self.butir1.frame.origin.y = 309
-            butirLainAction()
-        }
+//        if p2.x-50...p2.x+20 ~= CGFloat(newX) && p2.y-50...p2.y+20 ~= CGFloat(newY)  {
+//            let path = UIBezierPath()
+//            path.move(to: butir1.center)
+//            let targetPoint = CGPoint(x: 294, y: 329)
+//            let controlPoint = CGPoint(x: butir1.frame.x, y: 276)
+//            path.addQuadCurve(to: targetPoint, controlPoint: controlPoint)
+//
+//            self.butir1.frame.origin.x = 101
+//            self.butir1.frame.origin.y = 309
+//            butirLainAction()
+//        }
 
     }
     
